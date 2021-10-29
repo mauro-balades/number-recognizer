@@ -67,7 +67,7 @@ class NumberRecogniser:
             img = cv2.imread(path)[:,:,0]
             img = np.invert(np.array([img]))
             prediction = self._model.predict(img)
+            return np.argmax(prediction)
         except Exception as e:
             print(f"Error: {e}")
-        finally:
-            return np.argmax(prediction)
+            
