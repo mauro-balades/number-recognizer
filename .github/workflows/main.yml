@@ -35,8 +35,10 @@ jobs:
 
       - name: Testing load
         run: |
+          cd tests
           python3 test_load.py
 
       - name: Testing image recognition
         run: |
+          cd tests
           python3 test_recognition.py
