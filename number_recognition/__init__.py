@@ -22,6 +22,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
-version = "1.0.2"
+version = "1.0.3"
 
 from number_recognition.main import NumberRecogniser

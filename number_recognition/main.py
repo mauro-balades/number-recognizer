@@ -34,14 +34,15 @@ class NumberRecogniser:
 
     def __init__(self, model: str = model):
 
-        self.model = model
-
-    def init(self, epochs: int = 10):
         self._mnist = tf.keras.datasets.mnist
         (self.x_train, self.y_train), (self.x_test, self.y_test) = self._mnist.load_data()
 
         self.x_train = tf.keras.utils.normalize(self.x_train, axis=1)
         self.x_test = tf.keras.utils.normalize(self.x_test, axis=1)
+
+        self.model = model
+
+    def init(self, epochs: int = 10):
 
         _model = tf.keras.models.Sequential()
         _model.add(tf.keras.layers.Flatten(input_shape=(28, 28)))
