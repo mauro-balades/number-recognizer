@@ -38,7 +38,7 @@ setup(
     description="Recognize numbers from an (28 x 28) image using neural networks",
     author="Mauro Balades",
     author_email="mauro.balades@tutanota.com",
-    url="https://github.com/mauro-balades/number-recognition",
+    url="https://github.com/mauro-balades/number-recognizer",
     packages=["number_recognition"],
     requirements=[
         "tensorflow",
