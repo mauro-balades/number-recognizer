@@ -40,7 +40,7 @@ setup(
     author_email="mauro.balades@tutanota.com",
     url="https://github.com/mauro-balades/number-recognizer",
     packages=["number_recognition"],
-    requirements=[
+    install_requires=[
         "tensorflow",
         "opencv-python",
         "matplotlib",
