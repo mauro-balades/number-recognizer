@@ -1,5 +1,5 @@
 
 
-from number_recognition import NumberRecogniser
+from number_recognition import NumberRecognizer
 
-NumberRecogniser().init()
+NumberRecognizer().init()

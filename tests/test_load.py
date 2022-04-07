@@ -1,7 +1,7 @@
 
 
 
-from number_recognition import NumberRecogniser
+from number_recognition import NumberRecognizer
 
-n = NumberRecogniser()
+n = NumberRecognizer()
 n.load()
